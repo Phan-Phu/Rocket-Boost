@@ -272,7 +272,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Oscillator
+  m_Text: Level 4
 --- !u!222 &14931927
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -373,7 +373,7 @@ GameObject:
   - component: {fileID: 224777218}
   - component: {fileID: 224777217}
   m_Layer: 5
-  m_Name: Faster
+  m_Name: Level 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -452,7 +452,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Faster
+          m_StringArgument: Level 3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &224777218
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 472554499}
   - component: {fileID: 472554498}
   m_Layer: 5
-  m_Name: Slower
+  m_Name: Level 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -585,7 +585,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Slower
+          m_StringArgument: Level 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &472554499
@@ -926,10 +926,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Demo
-
-
-'
+  m_Text: Level 1
 --- !u!222 &641932822
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -951,7 +948,7 @@ GameObject:
   - component: {fileID: 666530618}
   - component: {fileID: 666530617}
   m_Layer: 5
-  m_Name: Oscillator
+  m_Name: Level 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1030,7 +1027,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Oscillator
+          m_StringArgument: Level 4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &666530618
@@ -1141,7 +1138,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Faster
+  m_Text: Level 3
 --- !u!222 &709862055
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2284,7 +2281,7 @@ GameObject:
   - component: {fileID: 2040326343}
   - component: {fileID: 2040326342}
   m_Layer: 5
-  m_Name: Demo
+  m_Name: Level 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2474,7 +2471,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slower
+  m_Text: Level 2
 --- !u!222 &2090568049
 CanvasRenderer:
   m_ObjectHideFlags: 0

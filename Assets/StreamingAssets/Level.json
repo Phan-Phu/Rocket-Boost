@@ -1,0 +1,20 @@
+{
+    "listLevelSave": [
+        {
+            "sceneName": "Slower",
+            "sceneActive": true
+        },
+        {
+            "sceneName": "Faster",
+            "sceneActive": false
+        },
+        {
+            "sceneName": "Oscillator",
+            "sceneActive": true
+        },
+        {
+            "sceneName": "Demo",
+            "sceneActive": true
+        }
+    ]
+}

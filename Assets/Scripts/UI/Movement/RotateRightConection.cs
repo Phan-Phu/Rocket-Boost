@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class RotateRightConection : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
+public class RotateRightConection : SingletonMonobehaviour<RotateRightConection>, IPointerUpHandler, IPointerDownHandler
 {
     private bool _connection = false;
     public bool Connection { get { return _connection; } }

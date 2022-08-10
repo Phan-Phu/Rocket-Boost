@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.265
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 628271221}
-  m_IndirectSpecularColor: {r: 0.031597853, g: 0.015608308, b: 0.002789593, a: 0.265}
+  m_IndirectSpecularColor: {r: 0.23341942, g: 0.26207533, b: 0.3071596, a: 0.265}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2363,7 +2363,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Demo
+          m_StringArgument: CoreGame
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2040326343

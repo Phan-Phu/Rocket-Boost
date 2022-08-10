@@ -2200,6 +2200,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SavePoint Pad
       objectReference: {fileID: 0}
+    - target: {fileID: 7105861998761597221, guid: 18ea55db110bad24282177a3c3f2600d, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 7105861998761597225, guid: 18ea55db110bad24282177a3c3f2600d, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -2540,7 +2544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8791804752417269505, guid: 9e3c5b6f61267e24aa99a3e030a34c1c, type: 3}
       propertyPath: m_TagString
-      value: BeginPoint
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8791804752417269517, guid: 9e3c5b6f61267e24aa99a3e030a34c1c, type: 3}
       propertyPath: m_RootOrder

@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-public class CollisionHandler : SingletonMonobehaviour<CollisionHandler>
+public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 1f;
     [SerializeField] float timeDestroyDelay = 0.3f;
@@ -49,7 +49,7 @@ public class CollisionHandler : SingletonMonobehaviour<CollisionHandler>
 
         switch (collision.gameObject.tag)
         {
-            case Tags.BeginPoint:
+            case Tags.Factory:
                 StartSavePointSequence();
                 break;
             case Tags.Friendly:

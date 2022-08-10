@@ -19,8 +19,6 @@ public class Movement : MonoBehaviour
     private AudioSource audioSource;
     private bool isRouting = true;
     public float outTimeUseEnegy = 3f;
-    private RotateRightConection rotateRight;
-    private RotateLeftConection rotateLeft;
 
     private float _timeUseEnergy;
     public float TimeUseEnergy { get { return _timeUseEnergy; } set { _timeUseEnergy = value; } }
@@ -35,8 +33,6 @@ public class Movement : MonoBehaviour
 
     private void OnEnable()
     {
-        rotateLeft = GameObject.FindGameObjectWithTag(Tags.RotateLeft).GetComponent<RotateLeftConection>();
-        rotateRight = GameObject.FindGameObjectWithTag(Tags.RotateRight).GetComponent<RotateRightConection>();
         EventHandler.BeforeSceneUnloadFadeOutEvent += FadeOutScene;
         EventHandler.AfterSceneLoadFadeInEvent += FadeInScene;
     }
@@ -163,11 +159,11 @@ public class Movement : MonoBehaviour
     private void RotationAndroid()
     {
         Vector3 rotation = Vector3.forward * Time.deltaTime * ZAngle;
-        if (rotateRight.Connection == true)
+        if (RotateRightConection.Instance.Connection == true)
         {
             RotationRight(rotation);
         }
-        else if (rotateLeft.Connection == true)
+        else if (RotateLeftConection.Instance.Connection == true)
         {
             RotationLeft(rotation);
         }
@@ -198,7 +194,7 @@ public class Movement : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag(Tags.BeginPoint))
+        if (other.gameObject.CompareTag(Tags.Factory))
         {
             isRouting = false;
         }
@@ -206,7 +202,7 @@ public class Movement : MonoBehaviour
 
     private void OnCollisionStay(Collision other)
     {
-        if (other.gameObject.CompareTag(Tags.BeginPoint))
+        if (other.gameObject.CompareTag(Tags.Factory))
         {
             if (this.isActiveAndEnabled == false)
             {

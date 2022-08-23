@@ -51,6 +51,7 @@ public class UIManager : MonoBehaviour
     public void GetValueEnegy()
     {
         playerMovement = FindObjectOfType<Movement>();
+
         if (playerMovement == null) { return; }
 
         float value = playerMovement.TimeUseEnergy / playerMovement.outTimeUseEnegy;

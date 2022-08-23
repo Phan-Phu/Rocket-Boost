@@ -42,7 +42,7 @@ public class Movement : MonoBehaviour
         EventHandler.AfterSceneLoadFadeInEvent -= FadeInScene;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (Application.platform == RuntimePlatform.Android)
         {
@@ -61,10 +61,10 @@ public class Movement : MonoBehaviour
         {
             ProccessRotation();
         }
-        else
-        {
-            RecoverEnegy();
-        }
+        // else
+        // {
+        //     RecoverEnegy();
+        // }
     }
 
     private void ProcessThurstPC()
@@ -85,7 +85,7 @@ public class Movement : MonoBehaviour
 
         rb.freezeRotation = true;
 
-        Vector3 rotation = Vector3.forward * Time.deltaTime * ZAngle;
+        Vector3 rotation = Vector3.forward * ZAngle;
 
         if (Input.GetKey(KeyCode.A))
         {
@@ -121,10 +121,10 @@ public class Movement : MonoBehaviour
         {
             RotationAndroid();
         }
-        else
-        {
-            RecoverEnegy();
-        }
+        // else
+        // {
+        //     RecoverEnegy();
+        // }
 
     }
     private void ProccessThurst()
@@ -134,7 +134,7 @@ public class Movement : MonoBehaviour
         audioSource.clip = audioThrust;
         particleThrust.Play();
 
-        float boost = mainThrust * Time.deltaTime;
+        float boost = mainThrust;
         rb.AddRelativeForce(Vector3.up * boost);
 
         if (!audioSource.isPlaying)
@@ -158,7 +158,7 @@ public class Movement : MonoBehaviour
     }
     private void RotationAndroid()
     {
-        Vector3 rotation = Vector3.forward * Time.deltaTime * ZAngle;
+        Vector3 rotation = Vector3.forward * ZAngle;
         if (RotateRightConection.Instance.Connection == true)
         {
             RotationRight(rotation);
@@ -180,17 +180,17 @@ public class Movement : MonoBehaviour
         particleThrustRight.Play();
     }
 
-    private void RecoverEnegy()
-    {
-        if (_timeUseEnergy >= outTimeUseEnegy)
-        {
-            rb.Sleep();
-        }
-        else
-        {
-            rb.WakeUp();
-        }
-    }
+    // private void RecoverEnegy()
+    // {
+    //     if (_timeUseEnergy >= outTimeUseEnegy)
+    //     {
+    //         rb.Sleep();
+    //     }
+    //     else
+    //     {
+    //         rb.WakeUp();
+    //     }
+    // }
 
     private void OnCollisionEnter(Collision other)
     {
@@ -200,24 +200,24 @@ public class Movement : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay(Collision other)
-    {
-        if (other.gameObject.CompareTag(Tags.Factory))
-        {
-            if (this.isActiveAndEnabled == false)
-            {
-                this.enabled = true;
-            }
-            if (_timeUseEnergy - Time.deltaTime < 0)
-            {
-                _timeUseEnergy = 0;
-            }
-            else
-            {
-                _timeUseEnergy -= Time.deltaTime;
-            }
-        }
-    }
+    // private void OnCollisionStay(Collision other)
+    // {
+    //     if (other.gameObject.CompareTag(Tags.Factory))
+    //     {
+    //         if (this.isActiveAndEnabled == false)
+    //         {
+    //             this.enabled = true;
+    //         }
+    //         if (_timeUseEnergy - Time.deltaTime < 0)
+    //         {
+    //             _timeUseEnergy = 0;
+    //         }
+    //         else
+    //         {
+    //             _timeUseEnergy -= Time.deltaTime;
+    //         }
+    //     }
+    // }
 
     private void FadeInScene()
     {

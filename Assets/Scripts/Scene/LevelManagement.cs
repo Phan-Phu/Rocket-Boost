@@ -59,6 +59,7 @@ public class LevelManagement : SingletonMonobehaviour<LevelManagement>, ISaveabl
         {
             print("save game");
             SaveLoadManager.Instance.SaveDataToFile();
+            //EventHandler.CallSaveGameEvent();
         }
         if(Input.GetKeyDown(KeyCode.N))
         {
@@ -87,7 +88,6 @@ public class LevelManagement : SingletonMonobehaviour<LevelManagement>, ISaveabl
         InitializeLevel();
         EventHandler.CallSaveGameEvent();
         SceneManager.LoadScene("Menu");
-
     }
 
     public List<LevelSave> ISaveableSave()

@@ -778,6 +778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2336910996667419094, guid: 1d65018fc3249364c8599655f66dfd82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2336910996667419098, guid: 1d65018fc3249364c8599655f66dfd82, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1542,6 +1546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2336910996667419094, guid: 1d65018fc3249364c8599655f66dfd82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2336910996667419098, guid: 1d65018fc3249364c8599655f66dfd82, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -2268,6 +2276,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 465290685, guid: 8a5114fa8ec57af47bf2c660019f13e9, type: 3}
+      propertyPath: ZAngle
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 465290685, guid: 8a5114fa8ec57af47bf2c660019f13e9, type: 3}
+      propertyPath: mainThrust
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 465290686, guid: 8a5114fa8ec57af47bf2c660019f13e9, type: 3}
       propertyPath: savePoint
       value: 

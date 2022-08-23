@@ -21,7 +21,7 @@ public class LoadSceneMenu : SingletonMonobehaviour<LoadSceneMenu>
 
     public void PlayGame()
     {
-        // if file json is nothing or not apear => error script (solution press S)
+        // if file json is nothing or not appear => error script (solution press S)
         EventHandler.CallLoadGameEvent();
 
         sceneMenu.SetFloat("LoadScene", speedLoadAnimation);

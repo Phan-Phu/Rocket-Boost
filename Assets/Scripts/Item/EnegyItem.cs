@@ -22,7 +22,6 @@ public class EnegyItem : MonoBehaviour
     private void IncreaseEnegy()
     {
         playerMovement.TimeUseEnergy -= value;
-
         Destroy(gameObject);
     }
 }
